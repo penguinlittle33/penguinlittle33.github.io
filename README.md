@@ -1,2 +1,5 @@
-# penguinlittle33.github.io
-Personal website of Xiao Peng, a master's student in Civil and Hydraulic Engineering at East China Normal University. Sharing projects, interests in hydrodynamic numerical modeling, reading notes, and everyday life.
+# Xiao Peng — Personal website
+
+Pre-rendered bilingual website for GitHub Pages. Upload this folder's contents to the repository root and enable Settings → Pages → Deploy from a branch → main → /(root).
+
+The site includes projects, education, internship experience, awards, reading and life sections, an interactive meadow, video and CAD drawing viewer. The online Sites writing backend is not part of this static deployment.
