@@ -1,0 +1,83 @@
+{
+  "id": "to-kill-a-mockingbird",
+  "kind": "reading",
+  "status": "published",
+  "date": "2026-10-29",
+  "title": {
+    "zh": "《杀死一只知更鸟》",
+    "en": "To Kill a Mockingbird"
+  },
+  "summary": {
+    "zh": "无论什么时代，勇敢都是永恒的赞歌。",
+    "en": "Whatever the era, courage remains an enduring song of praise."
+  },
+  "category": {
+    "zh": "读后感 · 01",
+    "en": "Reading notes · 01"
+  },
+  "book": "杀死一只知更鸟",
+  "bookEn": "To Kill a Mockingbird",
+  "bookAuthor": "哈珀·李",
+  "bookAuthorEn": "Harper Lee",
+  "cover": "/reading/to-kill-a-mockingbird/cover.jpg",
+  "body": {
+    "zh": [
+      {
+        "type": "p",
+        "text": "人在法庭上永远是正义平等的，但是世人不一定是永远遵循正义平等的。“只有人的良心，不能遵循从众心理”，这是阿迪克斯的话，也是作者寓意的深刻哲理。"
+      },
+      {
+        "type": "p",
+        "text": "这本书中也不乏激励人们坚持本心的话语，让人动容。无论什么时代，勇敢都是永恒的赞歌。"
+      },
+      {
+        "type": "h2",
+        "text": "阅读留影"
+      },
+      {
+        "type": "img",
+        "src": "/reading/to-kill-a-mockingbird/courage-page.jpg",
+        "alt": "关于真正勇敢的书页摘录，第 174 页。"
+      },
+      {
+        "type": "img",
+        "src": "/reading/to-kill-a-mockingbird/atticus-dialogue.jpg",
+        "alt": "阿迪克斯的回答：即使希望渺茫，依然不放弃争取。"
+      },
+      {
+        "type": "img",
+        "src": "/reading/to-kill-a-mockingbird/film-still.jpg",
+        "alt": "电影画面：站在他人的位置上，试着理解他。"
+      }
+    ],
+    "en": [
+      {
+        "type": "p",
+        "text": "In a court of law, people should always be treated with justice and equality, but people do not always uphold these principles. “A person's conscience is the one thing that must not follow the crowd.” These words from Atticus convey a profound idea at the heart of the book."
+      },
+      {
+        "type": "p",
+        "text": "The book is also full of moving words that encourage us to remain true to ourselves. Whatever the era, courage remains an enduring song of praise."
+      },
+      {
+        "type": "h2",
+        "text": "Moments from my reading"
+      },
+      {
+        "type": "img",
+        "src": "/reading/to-kill-a-mockingbird/courage-page.jpg",
+        "alt": "A passage about real courage, page 174 of the Chinese edition."
+      },
+      {
+        "type": "img",
+        "src": "/reading/to-kill-a-mockingbird/atticus-dialogue.jpg",
+        "alt": "Atticus on continuing to try, even when the odds seem overwhelming."
+      },
+      {
+        "type": "img",
+        "src": "/reading/to-kill-a-mockingbird/film-still.jpg",
+        "alt": "A film still about trying to understand another person's point of view."
+      }
+    ]
+  }
+}

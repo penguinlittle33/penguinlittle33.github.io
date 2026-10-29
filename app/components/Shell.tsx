@@ -1,0 +1,14 @@
+"use client";
+import { useEffect, useState } from "react";
+import SectionDivider from "./SectionDivider";
+
+import { ArrowUpRight, Menu, X } from "lucide-react";
+import { contactEmail, href, type Lang, type Profile } from "../../lib/content";
+const nav = [["/", "首页", "Home"], ["/work", "项目与经历", "Work"], ["/reading", "阅读", "Reading"], ["/journal", "生活手记", "Journal"], ["/contact", "联系我", "Contact"]];
+export default function Shell({lang, active="/", profile, children, className,languageUrl}:{lang:Lang;active?:string;profile:Profile;children:React.ReactNode;className?:string;languageUrl:string}) {
+  const [open,setOpen]=useState(false);
+  useEffect(()=>{document.documentElement.lang=lang==="zh"?"zh-CN":"en";},[lang]);
+  function toggle(){window.location.assign(languageUrl);}
+  const socials=[[lang==="zh"?"邮箱":"Email",`mailto:${contactEmail}`],["GitHub",profile.github],["LinkedIn",profile.linkedin],[lang==="zh"?"小红书":"Xiaohongshu",profile.xiaohongshu]].filter(x=>x[1]);
+  return <div className={["site-shell", className].filter(Boolean).join(" ")}><a className="skip-link" href="#main">{lang==="zh"?"跳转正文":"Skip to content"}</a><header className="site-header"><div className="header-inner"><a className="wordmark" href={href("/",lang)} aria-label={lang==="zh"?"彭筱 首页":"Xiao Peng Home"}><span className="brand-mark">彭</span><span><b>{lang==="zh"?"彭筱":"XIAO PENG"}</b><small>{lang==="zh"?"XIAO PENG":"彭筱"}</small></span></a><nav className={open?"navigation is-open":"navigation"} aria-label={lang==="zh"?"主导航":"Main navigation"}>{nav.map(([path,zh,en])=><a key={path} aria-current={active===path?"page":undefined} href={href(path,lang)}>{lang==="zh"?zh:en}</a>)}</nav><div className="header-actions"><button className="language-button" onClick={toggle} aria-label={lang==="zh"?"Switch to English":"切换为中文"}>{lang==="zh"?"EN":"中文"}<span>↗</span></button><button className="menu-toggle" onClick={()=>setOpen(!open)} aria-label={open?"Close menu":"Open menu"} aria-expanded={open}>{open?<X size={21}/>:<Menu size={21}/>}</button></div></div></header><main id="main">{children}</main><footer className="site-footer"><SectionDivider motif="flow"/><div className="footer-top"><div><a className="footer-name" href={href("/contact",lang)}>{lang==="zh"?"很高兴，在这里遇见你。":"Glad our paths crossed."}</a><p>{lang==="zh"?"关于水，关于阅读，也关于生活。":"A space for water, words, and everyday life."}</p></div><div className="socials">{socials.map(([name,url])=><a href={url} key={name} target="_blank" rel="noopener noreferrer">{name}<ArrowUpRight size={15}/></a>)}</div></div><div className="footer-bottom"><span>© 2026 {lang==="zh"?"彭筱":"XIAO PENG"}</span><span>Shanghai, China <span className="tiny-star">✳</span> {lang==="zh"?"认真生活，慢慢生长":"Stay curious. Grow steadily."}</span><a href={profile.github} target="_blank" rel="noopener noreferrer">{lang==="zh"?"GitHub":"GitHub"} ↗</a></div></footer></div>;
+}

@@ -1,0 +1,32 @@
+.intro-heading-row { display: grid; grid-template-columns: minmax(0,1fr) 240px; gap: 24px; padding-right: 60px; align-items: start; }
+.meadow { width: 100%; max-width: 260px; color: #6d7f62; padding-top: 3px; }
+.meadow-scene { position: relative; width: 100%; aspect-ratio: 28 / 19; border: 0; border-radius: 0; background: transparent; overflow: hidden; }
+.meadow-landscape { width: 100%; height: 100%; display: block; }
+.meadow-cloud { position: absolute; left: 18%; top: 8%; width: 53%; padding: 0; border: 0; background: none; color: inherit; border-radius: 30%; z-index: 2; cursor: pointer; }
+.meadow-cloud:disabled { opacity: 1; cursor: default; }
+.meadow-cloud svg { display: block; width: 100%; height: auto; filter: drop-shadow(0 3px 4px #a6b9a31a); }
+.cloud-body { fill: #fffef9; transition: fill .5s; }
+.is-idle .meadow-cloud { animation: cloud-float 4s ease-in-out infinite; }
+.is-idle .meadow-cloud:hover { filter: brightness(1.02); }
+.is-rain .cloud-body, .is-bloom .cloud-body { fill: #dfe9e7; }
+.is-clear .meadow-cloud, .is-sunny .meadow-cloud { animation: cloud-depart 1.2s ease-in forwards; pointer-events: none; }
+.meadow-rain { opacity: 0; }
+.is-rain .meadow-rain, .is-bloom .meadow-rain { opacity: 1; }
+.rain-drop { animation: meadow-rainfall .75s linear infinite; animation-delay: var(--delay); }
+.meadow-flower { opacity: 0; transform: scale(0); transform-box: fill-box; transform-origin: center bottom; }
+.is-bloom .meadow-flower, .is-clear .meadow-flower, .is-sunny .meadow-flower { animation: flower-grow .85s cubic-bezier(.2,.9,.3,1.15) both; animation-delay: var(--delay); }
+.meadow-sun { opacity: 0; transform: translateY(10px) scale(.85); transform-box: fill-box; transform-origin: center; transition: opacity .8s, transform 1.2s; }
+.is-sunny .meadow-sun { opacity: 1; transform: translateY(0) scale(1); }
+.meadow-status { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.experience-section .section-subtitle { font-size: 15px; color: var(--olive); margin-top: 9px; }
+.internship-section { margin-top: 40px; }
+@keyframes cloud-float { 0%,100% { transform: translate(0,0); } 50% { transform: translate(5px,-4px); } }
+@keyframes cloud-depart { from { transform: translateX(0); opacity: 1; } to { transform: translateX(210px); opacity: 0; } }
+@keyframes meadow-rainfall { from { transform: translate(4px,-16px); opacity: .15; } 20% { opacity: .8; } to { transform: translate(-9px,64px); opacity: .25; } }
+@keyframes flower-grow { from { opacity: 0; transform: scale(.05); } 55% { opacity: 1; transform: scale(1.08); } to { opacity: 1; transform: scale(1); } }
+/* The animation sits only in the blank area beside the title. */
+.profile-intro-copy { display: block; }
+.intro-heading-row .meadow { position: static; width: 100%; margin: 16px 0 0; padding-top: 0; }
+@media(max-width:1200px) and (min-width:981px) { .intro-heading-row { grid-template-columns: minmax(0,1fr) 180px; gap: 16px; padding-right: 20px; } }
+@media(max-width:980px) { .intro-heading-row { grid-template-columns: 1fr; gap: 0; padding-right: 0; } .intro-heading-row .meadow { width: 220px; max-width: 100%; justify-self: end; margin: 0 20px 20px 0; } }
+@media(prefers-reduced-motion:reduce) { .meadow * { animation-duration: 1ms !important; animation-iteration-count: 1 !important; transition: none !important; } .is-sunny .meadow-flower { opacity: 1; transform: scale(1); } }

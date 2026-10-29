@@ -1,0 +1,19 @@
+{
+  "id": "my-next-book",
+  "kind": "reading",
+  "status": "draft",
+  "date": "2026-10-29",
+  "title": { "zh": "《下一本书的名字》", "en": "" },
+  "summary": { "zh": "用一句话介绍你的读后感。", "en": "" },
+  "category": { "zh": "读后感", "en": "Reading notes" },
+  "book": "书名",
+  "bookAuthor": "作者",
+  "cover": "",
+  "body": {
+    "zh": [
+      { "type": "p", "text": "在这里写第一段。" },
+      { "type": "p", "text": "在这里写第二段。" }
+    ],
+    "en": []
+  }
+}

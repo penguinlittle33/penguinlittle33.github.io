@@ -1,0 +1,13 @@
+/* Keep portrait book covers legible in the landscape listing cards. */
+.reading-card .entry-cover { background: #edeae2; }
+.reading-card .entry-cover img { object-fit: contain; padding: 18px; }
+.article-reading .project-cover-detail { background: transparent; }
+.article-reading .project-cover-detail .cover-viewport { display: flex; justify-content: center; }
+.article-reading .project-cover-detail img { width: auto; max-width: 100%; max-height: 520px; object-fit: contain; }
+.article-reading .article-meta { justify-content: flex-start; gap: 12px 28px; flex-wrap: wrap; }
+.article-reading .prose > p { margin-bottom: 24px; }
+.article-reading .prose figure { margin: 28px 0 38px; }
+@media (max-width: 760px) {
+  .reading-card .entry-cover img { padding: 12px; }
+  .article-reading .project-cover-detail img { max-height: 420px; }
+}

@@ -1,0 +1,36 @@
+.project-cover {
+  position: relative;
+  overflow: hidden;
+  background: #e9ece4;
+  border-radius: 3px;
+}
+.project-cover.entry-cover { aspect-ratio: 1.54; }
+.cover-viewport { width: 100%; height: 100%; overflow: hidden; }
+.project-cover img { width: 100%; height: 100%; object-fit: cover; }
+
+/* Frame the screenshot's left half and remove the embedded white margins. */
+.cover-crop-svg { display: block; width: 100%; height: 100%; overflow: hidden; }
+.project-sequence {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  min-width: 34px;
+  padding: 3px 8px;
+  background: rgba(248,246,240,.95);
+  color: #43543e;
+  border: 1px solid rgba(67,84,62,.15);
+  border-radius: 3px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.project-cover-detail { margin-bottom: 45px; }
+.project-cover-detail .cover-viewport { height: auto; }
+.project-cover-detail img { height: auto; object-fit: contain; }
+.project-cover-detail.crop-left-half { aspect-ratio: 1077.5 / 578; }
+.project-cover-detail.crop-left-half .cover-viewport { height: 100%; }
+.project-cover-detail.fit-contain img { width: 100%; }
+@media (max-width: 760px) {
+  .project-cover.entry-cover { aspect-ratio: 1.8; }
+  .project-sequence { font-size: 14px; }
+}

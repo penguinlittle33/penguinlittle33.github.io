@@ -1,0 +1,66 @@
+:root { --annotation-size: 14px; }
+
+/* A single supporting-text scale, shared with the homepage. */
+.site-shell :is(.eyebrow, .small-note, .entry-meta, .timeline-date, .timeline-role, .section-subtitle, .article-meta, .footer-bottom, .hero-location, .portrait-caption, .photo-corner, .art-label, .art-number, .translation-note, .draft-banner, .cad-caption, .cad-zoom, .award-year) { font-size: var(--annotation-size); }
+.site-shell :is(.about-photo span, .wordmark small, .skill-tags span, .skill-panel p, .prose figcaption, .project-video-section figcaption, .cad-heading p, .cad-dialog-bar h3, .article-end p, .contact-email-card p) { font-size: var(--annotation-size); }
+.site-shell .text-link, .site-shell .language-button { font-size: var(--annotation-size); }
+.site-shell .eyebrow { letter-spacing: .12em; }
+.site-shell .navigation { font-size: 15px; }
+.site-shell .entry-meta { flex-wrap: wrap; align-items: baseline; gap: 4px 12px; line-height: 1.8; }
+.site-shell .entry-card p, .site-shell .timeline-item p, .site-shell .interest p, .site-shell .socials a, .site-shell .footer-top p { font-size: 15px; }
+.site-shell .page-heading > p, .site-shell .section-heading p, .site-shell .empty-notes p { font-size: 16px; }
+.site-shell .footer-bottom { flex-wrap: wrap; }
+.site-shell .hero-location { gap: 18px; }
+.site-shell .hero-location .availability { padding-left: 18px; }
+
+/* The same note size also applies to the writing interface. */
+.studio :is(.studio-brand span, .studio-nav span, .studio-entry small, .sidebar-note, .studio-title .eyebrow, .content-language span, .editor-hint, .studio-bottom, .field-label, .profile-photo-editor p, .preview-dialog-header) { font-size: var(--annotation-size); }
+.studio .studio-entry span, .studio label.field, .studio .settings-grid label { font-size: var(--annotation-size); }
+
+.section-divider { display: flex; align-items: center; gap: 20px; width: 100%; height: 64px; color: #7e967f; margin-bottom: 24px; pointer-events: none; }
+.section-divider svg { display: block; width: 200px; height: 64px; flex: 0 0 200px; }
+.divider-line { display: block; height: 1px; flex: 1 1 0; background: linear-gradient(90deg, #aebaa080, #9eaf93); }
+.divider-line:last-child { background: linear-gradient(90deg, #9eaf93, #aebaa080); }
+.divider-flow { color: #76918c; }
+.divider-reeds { color: #7b8d65; }
+.divider-saltmarsh { color: #8b9472; }
+.divider-compact { height: 40px; gap: 10px; margin-bottom: 18px; }
+.divider-compact svg { width: 125px; height: 40px; flex-basis: 125px; }
+.site-shell .experience-section, .site-shell .recognition-section { border-top: 0; padding-top: 0; margin-top: 64px; }
+.site-shell .internship-section { margin-top: 48px; }
+.site-shell .skills-panels { margin-top: 50px; }
+.site-shell .interest-section { padding-top: 52px; }
+.site-shell .page-heading-bottom { border-bottom: 0; padding-bottom: 0; font-size: var(--annotation-size); }
+.page-heading > .section-divider { margin-top: 12px; margin-bottom: 0; }
+.contact-heading > .section-divider { margin-top: 24px; }
+.site-shell .contact-social-section { margin-top: 42px; }
+.site-shell .article-meta { border-bottom: 0; padding-bottom: 0; margin-bottom: 8px; }
+.article-meta + .section-divider { margin-bottom: 28px; }
+.site-shell .prose .section-divider { margin-top: 38px; margin-bottom: 20px; }
+.site-shell .prose .section-divider + h2 { margin-top: 0; }
+.site-shell .arch-dam-media { margin-top: 38px; }
+.site-shell .cad-section { border-top: 0; padding-top: 0; margin-top: 38px; }
+.site-shell .article-end { border-top: 0; padding-top: 0; }
+.site-shell .article-end > .section-divider { margin-bottom: 20px; }
+.site-shell .article-end > span { display: none; }
+.site-footer > .section-divider { margin-bottom: 30px; }
+
+@media (max-width: 1050px) {
+  .site-shell .navigation { gap: 24px; }
+}
+@media (max-width: 760px) {
+  .section-divider { height: 50px; gap: 12px; margin-bottom: 21px; }
+  .section-divider svg { width: 156px; height: 50px; flex-basis: 156px; }
+  .divider-compact { height: 36px; gap: 9px; }
+  .divider-compact svg { width: 112px; height: 36px; flex-basis: 112px; }
+  .site-shell .experience-section, .site-shell .recognition-section { margin-top: 43px; }
+  .site-shell .internship-section { margin-top: 30px; }
+  .site-shell .skills-panels { margin-top: 32px; }
+  .site-shell .interest-section { padding-top: 38px; }
+  .site-shell .page-heading > p, .site-shell .section-heading p, .site-shell .empty-notes p { font-size: 15px; }
+  .site-shell .interest p { font-size: 14px; }
+  .site-shell .hero-location { gap: 12px; }
+  .site-shell .hero-location .availability { padding-left: 12px; }
+  .site-shell .prose .section-divider { margin-top: 30px; margin-bottom: 16px; }
+  .site-footer > .section-divider { margin-bottom: 24px; }
+}
