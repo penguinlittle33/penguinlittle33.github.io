@@ -1,0 +1,83 @@
+{
+  "id": "flowers-for-algernon",
+  "kind": "reading",
+  "status": "published",
+  "date": "2023-08-14",
+  "title": {
+    "zh": "《献给阿尔吉侬的花束》",
+    "en": "Flowers for Algernon"
+  },
+  "summary": {
+    "zh": "我们不再是小孩。",
+    "en": "We are no longer children."
+  },
+  "category": {
+    "zh": "读后感 · 02",
+    "en": "Reading notes · 02"
+  },
+  "book": "献给阿尔吉侬的花束",
+  "bookEn": "Flowers for Algernon",
+  "bookAuthor": "丹尼尔·凯斯",
+  "bookAuthorEn": "Daniel Keyes",
+  "cover": "/reading/flowers-for-algernon/flower for Algernon.jpg",
+  "body": {
+    "zh": [
+      {
+        "type": "p",
+        "text": "阿尔吉侬是一只为科学献身的聪明老鼠，他有短暂而璀璨的一生，主人公查理也是。"
+      },
+      {
+        "type": "p",
+        "text": "这本书的翻译非常困难也很有趣，并且这一版的翻译我觉得超好，分享给大家。"
+      },
+      {
+        "type": "h2",
+        "text": "阅读留影"
+      },
+      {
+        "type": "img",
+        "src": "/reading/flowers-for-algernon/science.jpg",
+        "alt": "有趣的谐音，模仿初学者学习说话。"
+      },
+      {
+        "type": "img",
+        "src":  "/reading/flowers-for-algernon/science2.jpg",
+        "alt": "进步报告=日记，看起来“我”很有进步了，我们也要坚持写日记。"
+      },
+      {
+        "type": "img",
+        "src": "/reading/flowers-for-algernon/kids.jpg",
+        "alt": "必须停止像小孩一样不断为自己忧虑。"
+      }
+    ],
+    "en": [
+      {
+        "type": "p",
+        "text": "Algernon is a clever mouse who gave his life for the sake of science; he lived a brief yet brilliant life—as did the protagonist, Charlie."
+      },
+      {
+        "type": "p",
+        "text": "Translating this book was both extremely challenging in Chinese and highly engaging; I personally think this particular translation is excellent, so I’m sharing it with you all."
+      },
+      {
+        "type": "h2",
+        "text": "Moments from my reading"
+      },
+      {
+        "type": "img",
+        "src": "/reading/flowers-for-algernon/science.jpg",
+        "alt": "Playful puns that mimic a beginner learning to speak."
+      },
+      {
+        "type": "img",
+        "src":  "/reading/flowers-for-algernon/science2.jpg",
+        "alt": "A progress report is like a diary; it seems \"I\" have made a lot of progress—we should also keep a diary."
+      },
+      {
+        "type": "img",
+        "src": "/reading/flowers-for-algernon/kids.jpg",
+        "alt": "We must stop constantly worrying about yourself like a child."
+      }
+    ]
+  }
+}
