@@ -45,5 +45,5 @@ function writePage(route,lang,is404=false){
 for(const lang of ["zh","en"])for(const route of routes)writePage(route,lang);
 writePage("/404","zh",true);
 fs.writeFileSync(path.join(output,".nojekyll"),"");
-fs.writeFileSync(path.join(output,"README.md"),"# Xiao Peng — Personal website\n\nPre-rendered bilingual website for GitHub Pages. Upload this folder's contents to the repository root and enable Settings → Pages → Deploy from a branch → main → /(root).\n\nThe site includes projects, education, internship experience, awards, reading and life sections, an interactive meadow, video and CAD drawing viewer. The online Sites writing backend is not part of this static deployment.\n");
+fs.writeFileSync(path.join(output,"README.md"),fs.readFileSync(path.join(root,"README.md"),"utf8"));
 console.log(JSON.stringify({pages:pageCount,output,articles:data.entries.length}));
